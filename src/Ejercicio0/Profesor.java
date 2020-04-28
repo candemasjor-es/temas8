@@ -46,7 +46,7 @@ public class Profesor extends MiembroUPV{
 
 	@Override public void menuIntranet() {
 	Scanner sc = new Scanner(System.in);
-	
+	int numero = sc.nextInt();
 	do {
 	System.out.println("Bienvenido al menú Intranet profesor, seleccione la operación que desee hacer:  \n1-Ver la información del profesor  \n2-Ver nómina del profesor \n3-¿A qué actividades deportivas desea apuntarse? \n4-SALIR");
 	switch (sc.nextInt()) {
@@ -65,7 +65,7 @@ public class Profesor extends MiembroUPV{
 			System.out.println("HASTA LUEGO!\nGracias por utilizar la Intranet de profesor");
 			break;
 		}
-	} while (sc=4);
+	} while (numero!=4);
 	}
 
 }

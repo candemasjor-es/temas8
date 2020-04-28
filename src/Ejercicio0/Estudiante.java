@@ -48,6 +48,8 @@ public class Estudiante extends MiembroUPV {
 	
 	@Override public void menuIntranet() {
 		Scanner sc = new Scanner(System.in);
+		int numero= sc.nextInt();
+		do {
 		System.out.println("Bienvenido al menú Intranet estudiante, seleccione la operación que desee hacer:  \n1-Ver la información del estudiante \n2-¿A qué actividades deportivas desea apuntarse? \n3-SALIR");
 		switch (sc.nextInt()) {
 			case 1:
@@ -62,6 +64,7 @@ public class Estudiante extends MiembroUPV {
 				System.out.println("HASTA LUEGO! Gracias por utilizar la Intranet de estudiante");
 				break;
 			}
+		} while (numero!=3);
 		
 		}
 
